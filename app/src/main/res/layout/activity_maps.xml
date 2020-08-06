@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/search_place"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:background="#FCF9F9"
+            android:hint="  Search Here" />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="40dp"
+            android:background="#31C784"
+            android:onClick="onClick"
+            android:text="Search" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/bunk"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="100dp"
+        android:onClick="onClick"
+        android:src="@android:drawable/sym_def_app_icon" />
+
+    <Button
+        android:id="@+id/to"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="150dp"
+        android:text="to" />
+
+
+</RelativeLayout>
+
